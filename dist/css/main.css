@@ -101,7 +101,7 @@ textarea {
   padding: 0;
 }
 body{
-  background: lavender;
+  background: red;
   display:grid;
   justify-content: center;
   grid-template: 1fr 0.1fr/ 1fr 4.3fr 1fr ;
