@@ -1,8 +1,10 @@
-	body {
-		background-color:black;
+	#body {
 		background-image:url(ik2.png);
 		width=100%;
 		background-repeat:repeat-x;
+		height:195px;
+		top:0px;
+		left:0px;
 		}
 	#links { 
 		background-color:white;
