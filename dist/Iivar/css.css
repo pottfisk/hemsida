@@ -1,10 +1,11 @@
 	#body {
 		background-image:url(ik2.png);
-		width=100%;
+		width:100%;
 		background-repeat:repeat-x;
 		height:195px;
 		top:0px;
 		left:0px;
+		position:absolute;
 		}
 	#links { 
 		background-color:white;
@@ -17,13 +18,14 @@
 	ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 40%;
   overflow: hidden;
   background-color: #333;
 }
 
 li {
   float:left;
+  
 }
 
 li a {
