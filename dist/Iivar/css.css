@@ -15,7 +15,7 @@
 		left:0px;
 		height:45px;
 		}
-	ul {
+	#ul {
   list-style-type: none;
   margin: 0;
   padding-left: 44%;
@@ -23,7 +23,7 @@
   background-color: #333;
 }
 
-li {
+#li {
   float:left;
   
 }
@@ -52,3 +52,4 @@ li a:hover:not(.active) {
 	width:100%;
 	color:white;
 }
+
