@@ -89,16 +89,108 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    min-height: 100vh;
+}
 
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+}
 
+h1 {
+    color: turquoise;
+    margin-left: 1em;
+    font-size: 5vh;
+}
 
+#header-content {
+    align-self: center;
+    display: flex;
+    width: 100%;
+    font-size:auto;
+    justify-content: space-around;
+}
 
+#header-content div {
+    width: auto;
+    text-align:center;
+    
+}
+#header-content p {
+    font-size: 2vh;
+}
 
+#content{
+    margin-top: auto;
+    align-self: center;
+    display:flex;
+    justify-content: space-between;    
+}
+#contactinfo {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+#contactinfo p{
+    font-size: 4vh;
+}
 
+#aboutme, #aboutsite{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#aboutme p, #aboutsite p{
+    font-size: 3vh;
+}
+#aboutme img {
+    align-self: center;
+    width: 30vh;
+}
 
+#picofday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#picofday img{;
+    margin-top: 2em;
+    width: 40vw;
+    box-shadow: 3px 3px;
+}
 
+.logos{
+    
+}
 
+.logos img {
+    width: 4em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    
+}
+
+a {
+    color: inherit;
+    text-decoration:none;
+}
 
 
 

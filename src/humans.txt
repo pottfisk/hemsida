@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Robert Paananen -- Developer
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 
