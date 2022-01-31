@@ -22,7 +22,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <header>
+  <header class="dark white">
     <h1>
       <a href="index.html">
 	Robert Paananen
@@ -52,12 +52,19 @@
       </div>
     </div>x
   </header>
-  <div id="aboutsite">
+  <div class="left"></div>
+  <div id="aboutsite" class="dark white">
     <p>
-      This site is self-hosted on a Raspberry Pi 3b+ running headless Raspbian Stretch. <br> The server uses Apache2 server software. DNS is handled by Loopia. 
+      This site is self-hosted on a Raspberry Pi 3b+ running headless Raspbian Stretch. <br> The server uses Apache2 server software. DNS is handled by Loopia. SSL certificate is from Let's Encrypt to provide HTTPS. <br>This site is only a hobby creation to learn more about HTML, CSS, JS, Apache2 etc.
     </p>
   </div>
-  <div id="content">
+  <div id="rigth">
+    <div id="darkButton" onclick="toggleDark()">
+      <p>Toggle dark/light </p>
+    </div>
+  </div>
+
+  <div id="content" class="dark white">
     <div class="logos">
       <a href="https://www.linkedin.com/in/robert-paananen-07777b171/">
 	<img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG24.png"></a>
@@ -68,7 +75,7 @@
       </a>
     </div>
   </div>
-  <footer>
+  <footer class="dark white">
     <p>
       Robert Paananen &#169; 2022
     </p>
