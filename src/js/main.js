@@ -1,9 +1,14 @@
-const container = document.querySelectorAll(".dark");
+const dark = document.querySelectorAll(".dark");
+const blue = document.querySelector(".blue"); 
 if(getCookie("darkModeToggled") == "false" || getCookie("darkModeToggled") == ""){
-    container.forEach(element => {element.classList.toggle("dark");});    
+    dark.forEach(element => {element.classList.toggle("dark");
+			    });
+    blue.classList.toggle("blue");
 }
 function toggleDark(){
-    container.forEach(element => {element.classList.toggle("dark");});
+    dark.forEach(element => {element.classList.toggle("dark");});
+    
+    blue.classList.toggle("blue");
     if(getCookie("darkModeToggled") == "true"){
 	setCookie("darkModeToggled","false",2);
     }else{
