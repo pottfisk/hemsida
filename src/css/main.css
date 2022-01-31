@@ -101,7 +101,7 @@ body {
 	    "left content right"
 	    "left footer right";
     background-color: lightblue;
-    grid-template-rows: auto 80vh auto auto;
+    grid-template-rows: auto 75vh auto auto;
     grid-template-columns: 20vw 60vw 20vw;
 }
 .white {
@@ -316,8 +316,9 @@ a {
 }
 
 #darkButton{
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid red;
+    background-color: orange;
+    margin-right: 0.5em;
 }
 #darkButton:hover{
     cursor:pointer;
