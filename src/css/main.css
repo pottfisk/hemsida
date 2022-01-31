@@ -331,7 +331,7 @@ a {
 	background-color: white;
 	
 	grid-template-rows: 10vh 75vh 10vh 5vh;
-	grid-template-columns: 20vw 60vw 20vw;
+	grid-template-columns: 20vw 55vw 25vw;
     }
 	
     #left, #right {
