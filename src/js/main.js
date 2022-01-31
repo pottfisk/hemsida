@@ -33,3 +33,9 @@ function setCookie(cname, cvalue, exdays) {
   let expires = "expires="+d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+
+
+function coolTransform(){
+    let img = document.getElementById("robbanBild");
+    img.style = "transform: rotate3d(0,0,0,180)";
+}

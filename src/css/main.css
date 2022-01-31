@@ -97,9 +97,9 @@ body {
     display: grid;
     grid-template-areas: 
 	"header header header"
-	    "left article rigth"
-	    "left content rigth"
-	    "left footer rigth";
+	    "left article right"
+	    "left content right"
+	    "left footer right";
     background-color: lightblue;
     grid-template-rows: auto 80vh auto auto;
     grid-template-columns: 20vw 60vw 20vw;
@@ -219,27 +219,77 @@ h1 {
     align-items: center;
     text-align:center;
 }
+#flip{    
+    perspective: 1000px;
+    background-color: transparent;
+}
+#flip-inner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+#flip:hover #flip-inner {
+  transform: rotateY(180deg);
+}
+
+#front, #back {
+
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+#back {
+    position: absolute;
+    top:0vw;
+    background-color: lightblue;
+    transform: rotateY(180deg);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    max-width: 30vw;
+    max-height: 30vw;
+    margin-top: 2em;
+    border: 2px solid grey;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #center img{
     margin-top: 2em;
     max-width: 30vw;
+    max-height: 30vw;
     border-radius:50%;
     border: 2px solid grey;
 }
+
 #center p{
     margin-top: 3em;
 }
-#rigth,#left {
+
+#back p{
+    margin-top: 0;
+    color:black;
+    font-size:2em;
+}
+
+#right,#left {
     background-color: lightblue;
 }
 
 #left{
     grid-area: left;
 }
-#rigth{
-    grid-area: rigth;
+#right{
+    grid-area: right;
     display: flex;
     justify-content: end;
     align-items: end;
+}
+#robbanBild:hover{
+    transform: rotate3d(10,10,10,0deg);
 }
 
 .logos img {
