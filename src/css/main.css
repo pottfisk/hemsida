@@ -162,7 +162,7 @@ h1 {
     font-size: 4vh;
 }
 
-#aboutme, #aboutsite{
+#aboutsite{
     grid-area: article;
     margin-top: 1em;
     display: flex;
@@ -170,18 +170,47 @@ h1 {
     text-align: left;
     min-height: 80vh;
     overflow:auto;
+    align-items:center;
+}
+#aboutme{
+    display: flex;
+    flex-direction: column;
+
+}
+#aboutme h2{
+    text-align:center;
 }
 #aboutme p, #aboutsite p, #contactinfo p{
-    font-size: 3vh;
+    font-size: 2vh;
     overflow:auto;
     margin-top: 1em;
     margin-left: 1em;
 }
-#aboutme img {
-    align-self: center;
-    width: 30vh;
+#aboutme p{
+    text-align:center;
+    margin:0;
 }
-
+#aboutme img {
+    width: 30vh;
+    max-width: 60vw;
+}
+#know{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly
+    
+}
+#hasse{
+    margin-top: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#list{
+    align-self: start;
+    margin-left: 7em;
+}
 #center{
     grid-area: article;
     display: flex;
@@ -232,7 +261,7 @@ a {
     background-color: #202124;
 }
 
-.dark p{
+.dark p, .dark h2, .dark li{
     color:#fdfdfd;
 }
 

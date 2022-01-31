@@ -1,5 +1,5 @@
 const container = document.querySelectorAll(".dark");
-if(getCookie("darkModeToggled") == "false" || "darkModeToggled") == ""){
+if(getCookie("darkModeToggled") == "false" || getCookie("darkModeToggled") == ""){
     container.forEach(element => {element.classList.toggle("dark");});    
 }
 function toggleDark(){
