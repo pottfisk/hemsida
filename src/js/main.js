@@ -5,7 +5,7 @@ if(getCookie("darkModeToggled") == "false"){
 function toggleDark(){
     container.forEach(element => {element.classList.toggle("dark");});
     if(getCookie("darkModeToggled") == "true"){
-	<setCookie("darkModeToggled","false",2);
+	setCookie("darkModeToggled","false",2);
     }else{
 	setCookie("darkModeToggled","true",2);
     }
