@@ -1,97 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-</head>
+  <body class="blue">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body class="blue">
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <header class="dark white">
-    <h1>
-      <a href="index.html">
-	Robert Paananen
-      </a>
-    </h1>
-    <div id="header-content">
-      <div>
-	<a href="contact.html">
-	<p>
-	  Contact
-	</p>
-	</a>
+    <!-- Add your site or application content here -->
+    <header class="dark white">
+      <h1>
+        <a href="index.html"> Robert Paananen </a>
+      </h1>
+      <div id="header-content">
+        <div>
+          <a href="contact.html">
+            <p>Contact</p>
+          </a>
+        </div>
+        <div>
+          <a href="aboutme.html">
+            <p>About me</p>
+          </a>
+        </div>
+        <div>
+          <a href="aboutsite.html">
+            <p>About this site</p>
+          </a>
+        </div>
       </div>
-      <div>
-	<a href="aboutme.html">
-	<p>
-	  About me
-	</p>
-	</a>
+      x
+    </header>
+    <div class="left"></div>
+    <div id="aboutsite" class="dark white">
+      <p>
+        This site is self-hosted on a Raspberry Pi 3b+ running headless Raspbian
+        Stretch. <br />
+        The server uses Apache2 server software. DNS is handled by Loopia. SSL
+        certificate is from Let's Encrypt to provide HTTPS. <br />
+        This site is only a hobby creation to learn more about HTML, CSS, JS,
+        Apache2 etc. <br />
+        The page uses cookies to store preference of dark mode, the cookies
+        expire after 2 days.
+      </p>
+    </div>
+    <div id="right">
+      <div id="darkButton" onclick="toggleDark()">
+        <p>Toggle dark/light</p>
       </div>
-      <div>
-	<a href="aboutsite.html">
-	<p>
-	  About this site
-	</p>
-	</a>
+    </div>
+
+    <div id="content" class="dark white">
+      <div class="logos">
+        <a href="https://www.linkedin.com/in/robert-paananen-07777b171/">
+          <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG24.png"
+        /></a>
       </div>
-    </div>x
-  </header>
-  <div class="left"></div>
-  <div id="aboutsite" class="dark white">
-    <p>
-      This site is self-hosted on a Raspberry Pi 3b+ running headless Raspbian Stretch. <br>
-      The server uses Apache2 server software. DNS is handled by Loopia. SSL certificate is from Let's Encrypt to provide HTTPS. <br>
-      This site is only a hobby creation to learn more about HTML, CSS, JS, Apache2 etc. <br>
-      The page uses cookies to store preference of dark mode, the cookies expire after 2 days. 
-    </p>
-  </div>
-  <div id="right">
-    <div id="darkButton" onclick="toggleDark()">
-      <p>Toggle dark/light </p>
+      <div class="logos">
+        <a href="https://github.com/robertpaananen">
+          <img src="https://pngimg.com/uploads/github/github_PNG80.png" />
+        </a>
+      </div>
     </div>
-  </div>
+    <footer class="dark white">
+      <p>Robert Paananen &#169; 2022</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-  <div id="content" class="dark white">
-    <div class="logos">
-      <a href="https://www.linkedin.com/in/robert-paananen-07777b171/">
-	<img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG24.png"></a>
-    </div>
-    <div class="logos">
-      <a href="https://github.com/pottfisk">
-	<img src="https://pngimg.com/uploads/github/github_PNG80.png">
-      </a>
-    </div>
-  </div>
-  <footer class="dark white">
-    <p>
-      Robert Paananen &#169; 2022
-    </p>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
-</body>
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("send", "pageview");
+    </script>
+    <script
+      src="https://www.google-analytics.com/analytics.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>
